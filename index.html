@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+      <title> ZODIAC SIGN</title>
+<body>
+
+    <center><h2>WHO YOU ARE ACCORDING TO YOUR ZODIAC SIGN</h2></center>
+
+   
+
+
+<form method = "POST" action="" onsubmit="return myFunction()">
+  Your Day:<br>
+  <input type="text" name="day" id = "day">
+  <br>
+  YOur Month:<br>
+  <input type="text" name="month" id = "month">
+  <br><br>
+  <input type="image" src="img/submit.png" width="100" height="60" alt="Submit">
+</form> 
+
+<p id = "result"></p>
+<script type="text/javascript" >
+    
+        function myFunction() {
+            var day = document.getElementById("day").value; 
+            var month = document.getElementById("month").value;
+        if((month==3&&day>=21)||(month==4&&day<=19)){
+            document.getElementById("result").innerHTML = "Aries is ruled by Mars, the fiery red planet of energy and drive Highly impatient and competitive, many Aries have the fighting spirit of your mythological ruler. You love to be a hero–or to be swept away by one.";
+        }else{
+            document.getElementById("result").innerHTML = " Sorry I can't give an information for now.";
+        }
+        return false;
+        } 
+        
+        </script>
+</body>
+</html>
